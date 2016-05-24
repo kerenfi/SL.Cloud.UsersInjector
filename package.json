@@ -1,0 +1,31 @@
+{
+  "name": "@sealights/sl-cloud-tools-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.2",
+    "bcrypt-nodejs": "0.0.3",
+    "bson": "^0.4.21",
+    "chai": "^3.5.0",
+    "fs": "0.0.2",
+    "https": "^1.0.0",
+    "mocha": "^2.4.5",
+    "mongodb": "^2.1.7",
+    "mongoose": "^4.4.3",
+    "path": "^0.12.7",
+    "request": "^2.69.0",
+    "restify": "^4.0.4",
+    "should": "^8.2.2",
+    "superagent": "^1.7.2",
+    "supertest": "^1.2.0"
+  },
+  "files": [
+    "tsOutputs"
+  ]
+}

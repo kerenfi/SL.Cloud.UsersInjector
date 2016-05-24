@@ -1,0 +1,7 @@
+node_modules/*
+tsOutputs/*
+#!node_modules/@sealights/
+.idea
+config.json
+*.log
+*.zip

@@ -1,0 +1,3 @@
+{
+    "nodeJsExcludedPaths": "tsOutputs/test/**/*.js"
+}

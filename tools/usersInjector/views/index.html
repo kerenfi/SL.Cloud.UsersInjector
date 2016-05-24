@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #ecf0f5;
+        }
+
+        .main-header, .navbar {
+            background-color: #3c8dbc !important;
+        }
+
+        .logo-lg {
+            font-size: 20px;
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+
+        .container {
+            padding-top: 80px;
+        }
+        /* Fixed layout */
+        .fixed .main-header,
+        .fixed .main-sidebar,
+        .fixed .left-side {
+            position: fixed;
+        }
+        .fixed .main-header {
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .main-header {
+            position: relative;
+            max-height: 100px;
+            z-index: 1030;
+        }
+        .main-header > .navbar {
+            -webkit-transition: margin-left 0.3s ease-in-out;
+            -o-transition: margin-left 0.3s ease-in-out;
+            transition: margin-left 0.3s ease-in-out;
+            margin-bottom: 0;
+            margin-left: 230px;
+            border: none;
+            min-height: 50px;
+            border-radius: 0;
+        }
+
+    </style>
+</head>
+<body>
+<header class="main-header">
+    <!-- Logo -->
+    <a class="logo">
+        <span class="logo-lg"><b>CT</b>Console</span>
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation"></nav>
+</header>
+<div class="container">
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1><span class="fa fa-sign-in"></span> Sign In</h1>
+        <!-- show any messages that come back with authentication -->
+
+        <!-- LOGIN FORM -->
+        <form action="/api/v1/tools/injector/user" method="post">
+            <div class="form-group">
+                <label>User name</label>
+                <input type="text" class="form-control" name="userName">
+            </div>
+            <div class="form-group">
+                <label>customerId</label>
+                <input type="text" class="form-control" name="customerId">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" name="email">
+            </div>
+
+            <button type="submit" class="btn btn-warning btn-lg">Sign in</button>
+        </form>
+        <hr>
+    </div>
+</div>
+</body>
+</html>

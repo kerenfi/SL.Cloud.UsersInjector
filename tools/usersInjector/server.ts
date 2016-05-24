@@ -1,7 +1,6 @@
 import slci = require('@sealights/sl-cloud-infra');
 import RoutesFactoryModule = require ("./lib/routesFactory");
 import InjectorServiceModule = require('./injectorService');
-import UsersServiceProxyModule = require('./lib/usersServiceProxy');
 import DBServicesModule = require('./lib/dbServices/usersInjectorDAL');
 import dbFactoryModule = require('./lib/dbFactory');
 import fs = require('fs');
